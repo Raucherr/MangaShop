@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-rsne!#(5jwoy*4aqv9&k2gm5ie6mq1d$q5tiw0wopqm__7d*g^'
+# SECRET_KEY = 'django-insecure-rsne!#(5jwoy*4aqv9&k2gm5ie6mq1d$q5tiw0wopqm__7d*g^'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -78,16 +78,16 @@ WSGI_APPLICATION = 'MangaShop.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'mangashop',
-        'USER':'emir',
-        'PASSWORD': '1',
-        'HOST': 'localhost',
-        'PORT': 5432
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'mangashop',
+#         'USER':'emir',
+#         'PASSWORD': '1',
+#         'HOST': 'localhost',
+#         'PORT': 5432
+#     }
+# }
 
 
 # Password validation
@@ -130,3 +130,5 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+from .local_settings import *

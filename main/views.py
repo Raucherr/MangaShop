@@ -9,7 +9,7 @@ def index(request):
 
 
 def manga_list(request, slug):
-    books = Manga.objects.filter(genre__slug=slug)
-    return render(request, 'main/book_list.html',
-                                {'books': books})
+    mangas = Manga.objects.filter(genre__slug=slug)
+    return render(request, 'main/manga_list.html',
+                                {'mangas': mangas})
 
